@@ -1,0 +1,14 @@
+name: Prueba de Sensibilidad de Nombres
+
+on: [push]
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probar una acción con nombre incorrecto
+        # ❌ Usamos 'Actions/Checkout' con mayúsculas
+        uses: Actions/Checkout@v4
+
+      - name: Paso de prueba exitoso
+        run: echo "La acción de checkout funcionó, por lo tanto es insensible a mayúsculas."
