@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Probar una acción con nombre incorrecto
         # ❌ Usamos 'Actions/Checkout' con mayúsculas
-        uses: Actions/Checkout@v4
+        uses: actions/checkout@v4
 
       - name: Paso de prueba exitoso
         run: echo "La acción de checkout funcionó, por lo tanto es insensible a mayúsculas."
